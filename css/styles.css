@@ -1,0 +1,27 @@
+.header-wrapper{
+    background-color: rgba(22, 22, 23, 1);
+}
+.header-wrapper{
+    color: #fff;
+}
+.nav-items li a {
+    text-decoration: none;
+}
+.nav-items
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+.internal-header-wrapper{
+    width: 980px;
+    background-color: gray;
+    margin: auto;
+}
+.logo-link, .search-link, .cart-link li img {
+    width: 18px;
+    display: block;
+}
+.logo-link, .search-link, .cart-link li img{
+    width: 100%;
+}
