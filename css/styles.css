@@ -12,7 +12,9 @@ body{
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-
+a{
+    cursor: pointer;
+}
 img {
     max-width: 100%;
 }
@@ -54,8 +56,19 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     padding: 1rem 0;
+    font-weight: 200;
+}
+ ul li a{
+   cursor: pointer;
+}
+.internal-header-wrapper ul li {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.internal-header-wrapper ul li:hover{
+    opacity: 1;
 }
 .internal-header-wrapper{
     width: 980px;
@@ -81,21 +94,206 @@ p{
 
 
 /************* MacBook Pro Section *************/
-.banner-1{
+.product-one-wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #fafafa;
 
 }
 .mac-book{
     text-align: center;
 }
+.mac-book-intro{
+    padding-top: 25px;
+    font-size: 1.8rem;
+}
 .mac-book-title{
     /* padding-top: 0.5rem; */
     padding-bottom: 1rem;
+    font-weight: 700;
+    font-size: 56px;
 }
-.mac-book-links{
+.mac-book-text{
+    font-size: 40px;
+}
+.product-links{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 0;
+}
+.product-link1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+.product-link1 span{
+    padding-top: 5px;
+}
+.product-link1:hover{
+    color: #555;
+}
+.product-link1 a:hover{
+    color: #555;
+}
+
+/*********** Product-Two-Wrapper *************/
+
+.product-two-wrapper{
+    background-image: url(/images/iphone11-pro-bg.jpg);
+    width: 100%;
+    height: 580px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.iphone-pro-title{
+    font-weight: 600;
+    font-size: 56px;
+    color: #fff;
+}
+.iphone-pro-intro{
+    color:#fff ;
+    font-size: 26px;
+    padding: 10px 0;
+}
+.iphone-pro-small-text{
+    color: #86868b;
+    font-size: 17px;
+}
+
+/************* product-three *******************/
+
+.product-three-wrapper{
+    background-image: url(/images/iphone11-bg.jpg);
+    width: 100%;
+    height: 580px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 65px 20px;
+}
+.iphone-title{
+    font-weight: 600;
+    font-size: 56px;
+    color: #000;
+}
+.iphone-intro{
+    color:#000 ;
+    font-size: 26px;
+    padding: 10px 0;
+}
+.iphone-small-text{
+    color: #86868b;
+    font-size: 17px;
+}
+
+/************ Product Items Grid  *************/
+.product-grid-wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+}
+.product-item{
+    width: 100%;
+    height: 600px;
+    text-align: center;
+}
+.product-watch-container{
+    background-image: url(/images/watch-series-5.jpg);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.watch-wrapper{
+    padding-top: 54px; 
+}
+.watch-intro{
+    font-size: 20px;
+    margin: auto;
+    width: 70%;
+    padding-top: 2rem ;
+    /* padding-bottom: 1rem; */
+}
+.apple-card-container{
+    background-image: url(/images/apple-card.jpg);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.apple-card{
+    padding-top: 54px;
+}
+.apple-card-intro{
+    font-size: 20px;
+    margin: auto;
+    width: 70%;
+    padding-top: 2rem;
+    
+}
+.apple-tv-container{
+    background-image: url(/images/apple-tv-background.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.apple-tv{
+    padding-top: 54px; 
+}
+.product-trailer-link{
+    padding-bottom: 54px;  
+}
+.product-link1{
+     color: #551A8B;
+     font-size: 17px;
+}
+.product-trailer-link1~
+ a{
+    color: #551A8B;
+}
+.product-airpod-container{
+    background-image: url(/images/air-pods.jpg);
+    height: 100%;
+    background-position: bottom;
+    background-color: #000;
+    background-size: initial;
+    background-repeat: no-repeat;
+
+}
+.airpod-wrapper{
+    padding-top: 54px;
+    font-weight: 600;
+    font-size: 56px;
+    color: #fff;
+}
+.airpod-intro{
+    font-size: 26px;
+    padding: 10px 0;
+    color: white;
 }
